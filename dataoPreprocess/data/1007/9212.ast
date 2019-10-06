@@ -1,0 +1,150 @@
+TranslationUnitDecl 0x3b27100 <<invalid sloc>> <invalid sloc>
+`-FunctionDecl 0x3bf54d8 <./src/9212.cpp:2:1, line:19:1> line:2:5 main 'int (void)'
+  `-CompoundStmt 0x3bf7840 <col:11, line:19:1>
+    |-DeclStmt 0x3bf6220 <line:3:4, col:37>
+    | |-VarDecl 0x3bf5590 <col:4, col:8> col:8 used t 'int'
+    | |-VarDecl 0x3bf5e60 <col:4, col:10> col:10 used px 'int'
+    | |-VarDecl 0x3bf5ed0 <col:4, col:13> col:13 used py 'int'
+    | |-VarDecl 0x3bf5f40 <col:4, col:16> col:16 used ax 'int'
+    | |-VarDecl 0x3bf5fb0 <col:4, col:19> col:19 used ay 'int'
+    | |-VarDecl 0x3bf6020 <col:4, col:22> col:22 used bx 'int'
+    | |-VarDecl 0x3bf6090 <col:4, col:25> col:25 used by 'int'
+    | |-VarDecl 0x3bf6100 <col:4, col:28> col:28 used flag 'int'
+    | `-VarDecl 0x3bf6170 <col:4, col:33> col:33 used sign 'int'
+    |-ForStmt 0x3bf77d0 <line:4:4, line:17:4>
+    | |-CallExpr 0x3bf6420 <line:4:8, col:21> 'int'
+    | | |-ImplicitCastExpr 0x3bf6408 <col:8> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    | | | `-DeclRefExpr 0x3bf6380 <col:8> 'int (const char *__restrict, ...)' lvalue Function 0x3be6128 'scanf' 'int (const char *__restrict, ...)'
+    | | |-ImplicitCastExpr 0x3bf6458 <col:14> 'const char *' <ArrayToPointerDecay>
+    | | | `-StringLiteral 0x3bf6308 <col:14> 'const char [3]' lvalue "%d"
+    | | `-UnaryOperator 0x3bf6360 <col:19, col:20> 'int *' prefix '&'
+    | |   `-DeclRefExpr 0x3bf6338 <col:20> 'int' lvalue Var 0x3bf5590 't' 'int'
+    | |-<<<NULL>>>
+    | |-ImplicitCastExpr 0x3bf64b8 <col:23, col:24> '_Bool' <IntegralToBoolean>
+    | | `-UnaryOperator 0x3bf6498 <col:23, col:24> 'int' postfix '--'
+    | |   `-DeclRefExpr 0x3bf6470 <col:23> 'int' lvalue Var 0x3bf5590 't' 'int'
+    | |-<<<NULL>>>
+    | `-CompoundStmt 0x3bf7790 <col:28, line:17:4>
+    |   |-BinaryOperator 0x3bf6580 <line:5:7, col:17> 'int' lvalue '='
+    |   | |-DeclRefExpr 0x3bf64d0 <col:7> 'int' lvalue Var 0x3bf6100 'flag' 'int'
+    |   | `-ImplicitCastExpr 0x3bf6568 <col:12, col:17> 'int' <LValueToRValue>
+    |   |   `-BinaryOperator 0x3bf6540 <col:12, col:17> 'int' lvalue '='
+    |   |     |-DeclRefExpr 0x3bf64f8 <col:12> 'int' lvalue Var 0x3bf6170 'sign' 'int'
+    |   |     `-IntegerLiteral 0x3bf6520 <col:17> 'int' 0
+    |   |-CallExpr 0x3bf68a0 <line:6:7, col:51> 'int'
+    |   | |-ImplicitCastExpr 0x3bf6888 <col:7> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |   | | `-DeclRefExpr 0x3bf6860 <col:7> 'int (const char *__restrict, ...)' lvalue Function 0x3be6128 'scanf' 'int (const char *__restrict, ...)'
+    |   | |-ImplicitCastExpr 0x3bf6900 <col:13> 'const char *' <ArrayToPointerDecay>
+    |   | | `-StringLiteral 0x3bf6678 <col:13> 'const char [13]' lvalue "%d%d%d%d%d%d"
+    |   | |-UnaryOperator 0x3bf66d8 <col:28, col:29> 'int *' prefix '&'
+    |   | | `-DeclRefExpr 0x3bf66b0 <col:29> 'int' lvalue Var 0x3bf5e60 'px' 'int'
+    |   | |-UnaryOperator 0x3bf6720 <col:32, col:33> 'int *' prefix '&'
+    |   | | `-DeclRefExpr 0x3bf66f8 <col:33> 'int' lvalue Var 0x3bf5ed0 'py' 'int'
+    |   | |-UnaryOperator 0x3bf6768 <col:36, col:37> 'int *' prefix '&'
+    |   | | `-DeclRefExpr 0x3bf6740 <col:37> 'int' lvalue Var 0x3bf5f40 'ax' 'int'
+    |   | |-UnaryOperator 0x3bf67b0 <col:40, col:41> 'int *' prefix '&'
+    |   | | `-DeclRefExpr 0x3bf6788 <col:41> 'int' lvalue Var 0x3bf5fb0 'ay' 'int'
+    |   | |-UnaryOperator 0x3bf67f8 <col:44, col:45> 'int *' prefix '&'
+    |   | | `-DeclRefExpr 0x3bf67d0 <col:45> 'int' lvalue Var 0x3bf6020 'bx' 'int'
+    |   | `-UnaryOperator 0x3bf6840 <col:48, col:49> 'int *' prefix '&'
+    |   |   `-DeclRefExpr 0x3bf6818 <col:49> 'int' lvalue Var 0x3bf6090 'by' 'int'
+    |   |-IfStmt 0x3bf6d40 <line:7:7, line:10:7>
+    |   | |-<<<NULL>>>
+    |   | |-BinaryOperator 0x3bf6a68 <line:7:10, col:22> '_Bool' '&&'
+    |   | | |-BinaryOperator 0x3bf6998 <col:10, col:14> '_Bool' '<='
+    |   | | | |-ImplicitCastExpr 0x3bf6968 <col:10> 'int' <LValueToRValue>
+    |   | | | | `-DeclRefExpr 0x3bf6918 <col:10> 'int' lvalue Var 0x3bf5f40 'ax' 'int'
+    |   | | | `-ImplicitCastExpr 0x3bf6980 <col:14> 'int' <LValueToRValue>
+    |   | | |   `-DeclRefExpr 0x3bf6940 <col:14> 'int' lvalue Var 0x3bf5e60 'px' 'int'
+    |   | | `-BinaryOperator 0x3bf6a40 <col:18, col:22> '_Bool' '<='
+    |   | |   |-ImplicitCastExpr 0x3bf6a10 <col:18> 'int' <LValueToRValue>
+    |   | |   | `-DeclRefExpr 0x3bf69c0 <col:18> 'int' lvalue Var 0x3bf5e60 'px' 'int'
+    |   | |   `-ImplicitCastExpr 0x3bf6a28 <col:22> 'int' <LValueToRValue>
+    |   | |     `-DeclRefExpr 0x3bf69e8 <col:22> 'int' lvalue Var 0x3bf6020 'bx' 'int'
+    |   | |-CompoundStmt 0x3bf6d18 <col:25, line:10:7>
+    |   | | |-BinaryOperator 0x3bf6ad8 <line:8:10, col:15> 'int' lvalue '='
+    |   | | | |-DeclRefExpr 0x3bf6a90 <col:10> 'int' lvalue Var 0x3bf6100 'flag' 'int'
+    |   | | | `-IntegerLiteral 0x3bf6ab8 <col:15> 'int' 1
+    |   | | `-IfStmt 0x3bf6ce8 <line:9:10, col:34>
+    |   | |   |-<<<NULL>>>
+    |   | |   |-BinaryOperator 0x3bf6c50 <col:13, col:25> '_Bool' '||'
+    |   | |   | |-BinaryOperator 0x3bf6b80 <col:13, col:17> '_Bool' '=='
+    |   | |   | | |-ImplicitCastExpr 0x3bf6b50 <col:13> 'int' <LValueToRValue>
+    |   | |   | | | `-DeclRefExpr 0x3bf6b00 <col:13> 'int' lvalue Var 0x3bf5f40 'ax' 'int'
+    |   | |   | | `-ImplicitCastExpr 0x3bf6b68 <col:17> 'int' <LValueToRValue>
+    |   | |   | |   `-DeclRefExpr 0x3bf6b28 <col:17> 'int' lvalue Var 0x3bf5e60 'px' 'int'
+    |   | |   | `-BinaryOperator 0x3bf6c28 <col:21, col:25> '_Bool' '=='
+    |   | |   |   |-ImplicitCastExpr 0x3bf6bf8 <col:21> 'int' <LValueToRValue>
+    |   | |   |   | `-DeclRefExpr 0x3bf6ba8 <col:21> 'int' lvalue Var 0x3bf6020 'bx' 'int'
+    |   | |   |   `-ImplicitCastExpr 0x3bf6c10 <col:25> 'int' <LValueToRValue>
+    |   | |   |     `-DeclRefExpr 0x3bf6bd0 <col:25> 'int' lvalue Var 0x3bf5e60 'px' 'int'
+    |   | |   |-BinaryOperator 0x3bf6cc0 <col:29, col:34> 'int' lvalue '='
+    |   | |   | |-DeclRefExpr 0x3bf6c78 <col:29> 'int' lvalue Var 0x3bf6170 'sign' 'int'
+    |   | |   | `-IntegerLiteral 0x3bf6ca0 <col:34> 'int' 1
+    |   | |   `-<<<NULL>>>
+    |   | `-<<<NULL>>>
+    |   |-IfStmt 0x3bf7528 <line:11:7, line:15:7>
+    |   | |-<<<NULL>>>
+    |   | |-BinaryOperator 0x3bf6f58 <line:11:10, col:28> '_Bool' '&&'
+    |   | | |-BinaryOperator 0x3bf6e88 <col:10, col:20> '_Bool' '&&'
+    |   | | | |-ImplicitCastExpr 0x3bf6e70 <col:10> '_Bool' <IntegralToBoolean>
+    |   | | | | `-ImplicitCastExpr 0x3bf6e40 <col:10> 'int' <LValueToRValue>
+    |   | | | |   `-DeclRefExpr 0x3bf6d70 <col:10> 'int' lvalue Var 0x3bf6100 'flag' 'int'
+    |   | | | `-BinaryOperator 0x3bf6e18 <col:16, col:20> '_Bool' '<='
+    |   | | |   |-ImplicitCastExpr 0x3bf6de8 <col:16> 'int' <LValueToRValue>
+    |   | | |   | `-DeclRefExpr 0x3bf6d98 <col:16> 'int' lvalue Var 0x3bf5fb0 'ay' 'int'
+    |   | | |   `-ImplicitCastExpr 0x3bf6e00 <col:20> 'int' <LValueToRValue>
+    |   | | |     `-DeclRefExpr 0x3bf6dc0 <col:20> 'int' lvalue Var 0x3bf5ed0 'py' 'int'
+    |   | | `-BinaryOperator 0x3bf6f30 <col:24, col:28> '_Bool' '<='
+    |   | |   |-ImplicitCastExpr 0x3bf6f00 <col:24> 'int' <LValueToRValue>
+    |   | |   | `-DeclRefExpr 0x3bf6eb0 <col:24> 'int' lvalue Var 0x3bf5ed0 'py' 'int'
+    |   | |   `-ImplicitCastExpr 0x3bf6f18 <col:28> 'int' <LValueToRValue>
+    |   | |     `-DeclRefExpr 0x3bf6ed8 <col:28> 'int' lvalue Var 0x3bf6090 'by' 'int'
+    |   | |-CompoundStmt 0x3bf7500 <col:31, line:15:7>
+    |   | | |-IfStmt 0x3bf7168 <line:12:10, col:34>
+    |   | | | |-<<<NULL>>>
+    |   | | | |-BinaryOperator 0x3bf70d0 <col:13, col:25> '_Bool' '||'
+    |   | | | | |-BinaryOperator 0x3bf7000 <col:13, col:17> '_Bool' '=='
+    |   | | | | | |-ImplicitCastExpr 0x3bf6fd0 <col:13> 'int' <LValueToRValue>
+    |   | | | | | | `-DeclRefExpr 0x3bf6f80 <col:13> 'int' lvalue Var 0x3bf5fb0 'ay' 'int'
+    |   | | | | | `-ImplicitCastExpr 0x3bf6fe8 <col:17> 'int' <LValueToRValue>
+    |   | | | | |   `-DeclRefExpr 0x3bf6fa8 <col:17> 'int' lvalue Var 0x3bf5ed0 'py' 'int'
+    |   | | | | `-BinaryOperator 0x3bf70a8 <col:21, col:25> '_Bool' '=='
+    |   | | | |   |-ImplicitCastExpr 0x3bf7078 <col:21> 'int' <LValueToRValue>
+    |   | | | |   | `-DeclRefExpr 0x3bf7028 <col:21> 'int' lvalue Var 0x3bf6090 'by' 'int'
+    |   | | | |   `-ImplicitCastExpr 0x3bf7090 <col:25> 'int' <LValueToRValue>
+    |   | | | |     `-DeclRefExpr 0x3bf7050 <col:25> 'int' lvalue Var 0x3bf5ed0 'py' 'int'
+    |   | | | |-BinaryOperator 0x3bf7140 <col:29, col:34> 'int' lvalue '='
+    |   | | | | |-DeclRefExpr 0x3bf70f8 <col:29> 'int' lvalue Var 0x3bf6170 'sign' 'int'
+    |   | | | | `-IntegerLiteral 0x3bf7120 <col:34> 'int' 1
+    |   | | | `-<<<NULL>>>
+    |   | | `-IfStmt 0x3bf74d0 <line:13:10, line:14:32>
+    |   | |   |-<<<NULL>>>
+    |   | |   |-ImplicitCastExpr 0x3bf71d8 <line:13:13> '_Bool' <IntegralToBoolean>
+    |   | |   | `-ImplicitCastExpr 0x3bf71c0 <col:13> 'int' <LValueToRValue>
+    |   | |   |   `-DeclRefExpr 0x3bf7198 <col:13> 'int' lvalue Var 0x3bf6170 'sign' 'int'
+    |   | |   |-CallExpr 0x3bf72f8 <col:19, col:32> 'int'
+    |   | |   | |-ImplicitCastExpr 0x3bf72e0 <col:19> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |   | |   | | `-DeclRefExpr 0x3bf72b8 <col:19> 'int (const char *__restrict, ...)' lvalue Function 0x3be3370 'printf' 'int (const char *__restrict, ...)'
+    |   | |   | `-ImplicitCastExpr 0x3bf7328 <col:26> 'const char *' <ArrayToPointerDecay>
+    |   | |   |   `-StringLiteral 0x3bf7288 <col:26> 'const char [4]' lvalue "On\n"
+    |   | |   `-CallExpr 0x3bf7488 <line:14:15, col:32> 'int'
+    |   | |     |-ImplicitCastExpr 0x3bf7470 <col:15> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |   | |     | `-DeclRefExpr 0x3bf7448 <col:15> 'int (const char *__restrict, ...)' lvalue Function 0x3be3370 'printf' 'int (const char *__restrict, ...)'
+    |   | |     `-ImplicitCastExpr 0x3bf74b8 <col:22> 'const char *' <ArrayToPointerDecay>
+    |   | |       `-StringLiteral 0x3bf7418 <col:22> 'const char [8]' lvalue "Inside\n"
+    |   | `-<<<NULL>>>
+    |   `-IfStmt 0x3bf7760 <line:16:7, col:35>
+    |     |-<<<NULL>>>
+    |     |-UnaryOperator 0x3bf75b0 <col:10, col:11> '_Bool' prefix '!'
+    |     | `-ImplicitCastExpr 0x3bf7598 <col:11> '_Bool' <IntegralToBoolean>
+    |     |   `-ImplicitCastExpr 0x3bf7580 <col:11> 'int' <LValueToRValue>
+    |     |     `-DeclRefExpr 0x3bf7558 <col:11> 'int' lvalue Var 0x3bf6100 'flag' 'int'
+    |     |-CallExpr 0x3bf7718 <col:17, col:35> 'int'
+    |     | |-ImplicitCastExpr 0x3bf7700 <col:17> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |     | | `-DeclRefExpr 0x3bf76d8 <col:17> 'int (const char *__restrict, ...)' lvalue Function 0x3be3370 'printf' 'int (const char *__restrict, ...)'
+    |     | `-ImplicitCastExpr 0x3bf7748 <col:24> 'const char *' <ArrayToPointerDecay>
+    |     |   `-StringLiteral 0x3bf76a8 <col:24> 'const char [9]' lvalue "Outside\n"
+    |     `-<<<NULL>>>
+    `-ReturnStmt 0x3bf7828 <line:18:4, col:11>
+      `-IntegerLiteral 0x3bf7808 <col:11> 'int' 0

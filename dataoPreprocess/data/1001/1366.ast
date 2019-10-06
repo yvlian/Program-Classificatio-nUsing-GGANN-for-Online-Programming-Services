@@ -1,0 +1,35 @@
+TranslationUnitDecl 0x31a2100 <<invalid sloc>> <invalid sloc>
+|-UsingDirectiveDecl 0x37ca0b8 <./src/1366.cpp:3:1, col:17> col:17 Namespace 0x31a2a98 'std'
+`-FunctionDecl 0x37ca128 <line:5:1, line:10:1> line:5:5 main 'int (void)'
+  `-CompoundStmt 0x37cc8a8 <line:6:1, line:10:1>
+    |-DeclStmt 0x37ca2c8 <line:7:2, col:12>
+    | |-VarDecl 0x37ca1e0 <col:2, col:9> col:9 used a 'double'
+    | `-VarDecl 0x37ca250 <col:2, col:11> col:11 used b 'double'
+    |-WhileStmt 0x37cc850 <line:8:2, col:40>
+    | |-<<<NULL>>>
+    | |-ImplicitCastExpr 0x37cc5a0 <col:9, col:17> '_Bool' <PointerToBoolean>
+    | | `-ImplicitCastExpr 0x37cc588 <col:9, col:17> 'void *' <UserDefinedConversion>
+    | |   `-CXXMemberCallExpr 0x37cc560 <col:9, col:17> 'void *'
+    | |     `-MemberExpr 0x37cc528 <col:9, col:17> '<bound member function type>' .operator void * 0x3723a18
+    | |       `-ImplicitCastExpr 0x37cc508 <col:9, col:17> 'const class std::basic_ios<char>' lvalue <UncheckedDerivedToBase (virtual basic_ios)>
+    | |         `-CXXOperatorCallExpr 0x37cc488 <col:9, col:17> '__istream_type':'class std::basic_istream<char>' lvalue
+    | |           |-ImplicitCastExpr 0x37cc470 <col:15> '__istream_type &(*)(double &)' <FunctionToPointerDecay>
+    | |           | `-DeclRefExpr 0x37cc448 <col:15> '__istream_type &(double &)' lvalue CXXMethod 0x3773fa0 'operator>>' '__istream_type &(double &)'
+    | |           |-CXXOperatorCallExpr 0x37ca800 <col:9, col:14> '__istream_type':'class std::basic_istream<char>' lvalue
+    | |           | |-ImplicitCastExpr 0x37ca7e8 <col:12> '__istream_type &(*)(double &)' <FunctionToPointerDecay>
+    | |           | | `-DeclRefExpr 0x37ca768 <col:12> '__istream_type &(double &)' lvalue CXXMethod 0x3773fa0 'operator>>' '__istream_type &(double &)'
+    | |           | |-DeclRefExpr 0x37ca2e0 <col:9> 'istream':'class std::basic_istream<char>' lvalue Var 0x37c9a48 'cin' 'istream':'class std::basic_istream<char>'
+    | |           | `-DeclRefExpr 0x37ca308 <col:14> 'double' lvalue Var 0x37ca1e0 'a' 'double'
+    | |           `-DeclRefExpr 0x37ca848 <col:17> 'double' lvalue Var 0x37ca250 'b' 'double'
+    | `-CallExpr 0x37cc800 <col:20, col:40> 'int'
+    |   |-ImplicitCastExpr 0x37cc7e8 <col:20> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |   | `-DeclRefExpr 0x37cc760 <col:20> 'int (const char *__restrict, ...)' lvalue Function 0x325e220 'printf' 'int (const char *__restrict, ...)'
+    |   |-ImplicitCastExpr 0x37cc838 <col:27> 'const char *' <ArrayToPointerDecay>
+    |   | `-StringLiteral 0x37cc688 <col:27> 'const char [7]' lvalue "%.4lf\n"
+    |   `-BinaryOperator 0x37cc738 <col:37, col:39> 'double' '+'
+    |     |-ImplicitCastExpr 0x37cc708 <col:37> 'double' <LValueToRValue>
+    |     | `-DeclRefExpr 0x37cc6b8 <col:37> 'double' lvalue Var 0x37ca1e0 'a' 'double'
+    |     `-ImplicitCastExpr 0x37cc720 <col:39> 'double' <LValueToRValue>
+    |       `-DeclRefExpr 0x37cc6e0 <col:39> 'double' lvalue Var 0x37ca250 'b' 'double'
+    `-ReturnStmt 0x37cc890 <line:9:2, col:9>
+      `-IntegerLiteral 0x37cc870 <col:9> 'int' 0

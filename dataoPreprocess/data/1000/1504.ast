@@ -1,0 +1,42 @@
+TranslationUnitDecl 0x2dc4100 <<invalid sloc>> <invalid sloc>
+|-UsingDirectiveDecl 0x33d1538 <./src/1504.cpp:2:1, col:17> col:17 Namespace 0x2dc4a98 'std'
+`-FunctionDecl 0x33d15a8 <line:4:1, line:14:1> line:4:5 main 'int (void)'
+  `-CompoundStmt 0x33d33d8 <line:5:1, line:14:1>
+    |-DeclStmt 0x33d1748 <line:6:5, col:12>
+    | |-VarDecl 0x33d1660 <col:5, col:9> col:9 used i 'int'
+    | `-VarDecl 0x33d16d0 <col:5, col:11> col:11 used j 'int'
+    |-WhileStmt 0x33d3380 <line:7:5, line:11:5>
+    | |-<<<NULL>>>
+    | |-ImplicitCastExpr 0x33d1d90 <line:7:11, col:16> '_Bool' <PointerToBoolean>
+    | | `-ImplicitCastExpr 0x33d1d78 <col:11, col:16> 'void *' <UserDefinedConversion>
+    | |   `-CXXMemberCallExpr 0x33d1d50 <col:11, col:16> 'void *'
+    | |     `-MemberExpr 0x33d1d18 <col:11, col:16> '<bound member function type>' .operator void * 0x33266c8
+    | |       `-ImplicitCastExpr 0x33d1cf8 <col:11, col:16> 'const class std::basic_ios<char>' lvalue <UncheckedDerivedToBase (virtual basic_ios)>
+    | |         `-CXXOperatorCallExpr 0x33d1c80 <col:11, col:16> '__istream_type':'class std::basic_istream<char>' lvalue
+    | |           |-ImplicitCastExpr 0x33d1c68 <col:14> '__istream_type &(*)(int &)' <FunctionToPointerDecay>
+    | |           | `-DeclRefExpr 0x33d1be8 <col:14> '__istream_type &(int &)' lvalue CXXMethod 0x337a4a0 'operator>>' '__istream_type &(int &)'
+    | |           |-DeclRefExpr 0x33d1760 <col:11> 'istream':'class std::basic_istream<char>' lvalue Var 0x33d0ec8 'cin' 'istream':'class std::basic_istream<char>'
+    | |           `-DeclRefExpr 0x33d1788 <col:16> 'int' lvalue Var 0x33d1660 'i' 'int'
+    | `-CompoundStmt 0x33d3358 <line:8:5, line:11:5>
+    |   |-CXXOperatorCallExpr 0x33d21b0 <line:9:8, col:13> '__istream_type':'class std::basic_istream<char>' lvalue
+    |   | |-ImplicitCastExpr 0x33d2198 <col:11> '__istream_type &(*)(int &)' <FunctionToPointerDecay>
+    |   | | `-DeclRefExpr 0x33d2170 <col:11> '__istream_type &(int &)' lvalue CXXMethod 0x337a4a0 'operator>>' '__istream_type &(int &)'
+    |   | |-DeclRefExpr 0x33d1da8 <col:8> 'istream':'class std::basic_istream<char>' lvalue Var 0x33d0ec8 'cin' 'istream':'class std::basic_istream<char>'
+    |   | `-DeclRefExpr 0x33d1dd0 <col:13> 'int' lvalue Var 0x33d16d0 'j' 'int'
+    |   `-CXXOperatorCallExpr 0x33d3310 <line:10:8, col:21> '__ostream_type':'class std::basic_ostream<char>' lvalue
+    |     |-ImplicitCastExpr 0x33d32f8 <col:19> '__ostream_type &(*)(__ostream_type &(*)(__ostream_type &))' <FunctionToPointerDecay>
+    |     | `-DeclRefExpr 0x33d3270 <col:19> '__ostream_type &(__ostream_type &(*)(__ostream_type &))' lvalue CXXMethod 0x3355ff0 'operator<<' '__ostream_type &(__ostream_type &(*)(__ostream_type &))'
+    |     |-CXXOperatorCallExpr 0x33d2830 <col:8, col:18> '__ostream_type':'class std::basic_ostream<char>' lvalue
+    |     | |-ImplicitCastExpr 0x33d2818 <col:12> '__ostream_type &(*)(int)' <FunctionToPointerDecay>
+    |     | | `-DeclRefExpr 0x33d2798 <col:12> '__ostream_type &(int)' lvalue CXXMethod 0x3356ff0 'operator<<' '__ostream_type &(int)'
+    |     | |-DeclRefExpr 0x33d21f8 <col:8> 'ostream':'class std::basic_ostream<char>' lvalue Var 0x33d0f38 'cout' 'ostream':'class std::basic_ostream<char>'
+    |     | `-ParenExpr 0x33d22c8 <col:14, col:18> 'int'
+    |     |   `-BinaryOperator 0x33d22a0 <col:15, col:17> 'int' '+'
+    |     |     |-ImplicitCastExpr 0x33d2270 <col:15> 'int' <LValueToRValue>
+    |     |     | `-DeclRefExpr 0x33d2220 <col:15> 'int' lvalue Var 0x33d1660 'i' 'int'
+    |     |     `-ImplicitCastExpr 0x33d2288 <col:17> 'int' <LValueToRValue>
+    |     |       `-DeclRefExpr 0x33d2248 <col:17> 'int' lvalue Var 0x33d16d0 'j' 'int'
+    |     `-ImplicitCastExpr 0x33d3258 <col:21> 'basic_ostream<char, struct std::char_traits<char> > &(*)(basic_ostream<char, struct std::char_traits<char> > &)' <FunctionToPointerDecay>
+    |       `-DeclRefExpr 0x33d3228 <col:21> 'basic_ostream<char, struct std::char_traits<char> > &(basic_ostream<char, struct std::char_traits<char> > &)' lvalue Function 0x335a0e0 'endl' 'basic_ostream<char, struct std::char_traits<char> > &(basic_ostream<char, struct std::char_traits<char> > &)' (FunctionTemplate 0x333cca8 'endl')
+    `-ReturnStmt 0x33d33c0 <line:12:5, col:12>
+      `-IntegerLiteral 0x33d33a0 <col:12> 'int' 0

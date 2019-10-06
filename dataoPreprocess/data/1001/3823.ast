@@ -1,0 +1,35 @@
+TranslationUnitDecl 0x374d100 <<invalid sloc>> <invalid sloc>
+|-UsingDirectiveDecl 0x381b378 <./src/3823.cpp:2:1, col:17> col:17 Namespace 0x374da98 'std'
+`-FunctionDecl 0x381b3e8 <line:4:1, line:10:1> line:4:5 main 'int (void)'
+  `-CompoundStmt 0x381c338 <col:12, line:10:1>
+    |-DeclStmt 0x381bda8 <line:5:2, col:13>
+    | |-VarDecl 0x381b4a0 <col:2, col:9> col:9 used a 'double'
+    | `-VarDecl 0x381bd30 <col:2, col:12> col:12 used b 'double'
+    |-WhileStmt 0x381c2e0 <line:6:2, line:8:2>
+    | |-<<<NULL>>>
+    | |-BinaryOperator 0x381c0d8 <line:6:9, /usr/include/libio.h:62:17> '_Bool' '!='
+    | | |-CallExpr 0x381c020 <./src/3823.cpp:6:9, col:31> 'int'
+    | | | |-ImplicitCastExpr 0x381c008 <col:9> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    | | | | `-DeclRefExpr 0x381bf80 <col:9> 'int (const char *__restrict, ...)' lvalue Function 0x380bfe8 'scanf' 'int (const char *__restrict, ...)'
+    | | | |-ImplicitCastExpr 0x381c060 <col:15> 'const char *' <ArrayToPointerDecay>
+    | | | | `-StringLiteral 0x381be98 <col:15> 'const char [7]' lvalue "%lf%lf"
+    | | | |-UnaryOperator 0x381bf18 <col:25, col:26> 'double *' prefix '&'
+    | | | | `-DeclRefExpr 0x381bec8 <col:26> 'double' lvalue Var 0x381b4a0 'a' 'double'
+    | | | `-UnaryOperator 0x381bf60 <col:29, col:30> 'double *' prefix '&'
+    | | |   `-DeclRefExpr 0x381bf38 <col:30> 'double' lvalue Var 0x381bd30 'b' 'double'
+    | | `-ParenExpr 0x381c0b8 </usr/include/libio.h:62:14, col:17> 'int'
+    | |   `-UnaryOperator 0x381c098 <col:15, col:16> 'int' prefix '-'
+    | |     `-IntegerLiteral 0x381c078 <col:16> 'int' 1
+    | `-CompoundStmt 0x381c2c0 <./src/3823.cpp:6:41, line:8:2>
+    |   `-CallExpr 0x381c270 <line:7:3, col:26> 'int'
+    |     |-ImplicitCastExpr 0x381c258 <col:3> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |     | `-DeclRefExpr 0x381c230 <col:3> 'int (const char *__restrict, ...)' lvalue Function 0x3809230 'printf' 'int (const char *__restrict, ...)'
+    |     |-ImplicitCastExpr 0x381c2a8 <col:10> 'const char *' <ArrayToPointerDecay>
+    |     | `-StringLiteral 0x381c158 <col:10> 'const char [7]' lvalue "%.4lf\n"
+    |     `-BinaryOperator 0x381c208 <col:21, col:25> 'double' '+'
+    |       |-ImplicitCastExpr 0x381c1d8 <col:21> 'double' <LValueToRValue>
+    |       | `-DeclRefExpr 0x381c188 <col:21> 'double' lvalue Var 0x381b4a0 'a' 'double'
+    |       `-ImplicitCastExpr 0x381c1f0 <col:25> 'double' <LValueToRValue>
+    |         `-DeclRefExpr 0x381c1b0 <col:25> 'double' lvalue Var 0x381bd30 'b' 'double'
+    `-ReturnStmt 0x381c320 <line:9:2, col:9>
+      `-IntegerLiteral 0x381c300 <col:9> 'int' 0

@@ -1,0 +1,33 @@
+TranslationUnitDecl 0x32a2100 <<invalid sloc>> <invalid sloc>
+`-FunctionDecl 0x334fa20 <./src/9746.cpp:2:1, line:8:1> line:2:5 main 'int (void)'
+  `-CompoundStmt 0x3350138 <line:3:1, line:8:1>
+    |-DeclStmt 0x334fbc0 <line:4:2, col:9>
+    | |-VarDecl 0x334fad8 <col:2, col:6> col:6 used a 'int'
+    | `-VarDecl 0x334fb48 <col:2, col:8> col:8 used b 'int'
+    |-WhileStmt 0x33500e0 <line:5:2, line:6:20>
+    | |-<<<NULL>>>
+    | |-BinaryOperator 0x334feb8 <line:5:8, /usr/include/libio.h:62:17> '_Bool' '!='
+    | | |-CallExpr 0x334fe00 <./src/9746.cpp:5:8, col:26> 'int'
+    | | | |-ImplicitCastExpr 0x334fde8 <col:8> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    | | | | `-DeclRefExpr 0x334fd68 <col:8> 'int (const char *__restrict, ...)' lvalue Function 0x33428c8 'scanf' 'int (const char *__restrict, ...)'
+    | | | |-ImplicitCastExpr 0x334fe40 <col:14> 'const char *' <ArrayToPointerDecay>
+    | | | | `-StringLiteral 0x334fca8 <col:14> 'const char [5]' lvalue "%d%d"
+    | | | |-UnaryOperator 0x334fd00 <col:21, col:22> 'int *' prefix '&'
+    | | | | `-DeclRefExpr 0x334fcd8 <col:22> 'int' lvalue Var 0x334fad8 'a' 'int'
+    | | | `-UnaryOperator 0x334fd48 <col:24, col:25> 'int *' prefix '&'
+    | | |   `-DeclRefExpr 0x334fd20 <col:25> 'int' lvalue Var 0x334fb48 'b' 'int'
+    | | `-ParenExpr 0x334fe98 </usr/include/libio.h:62:14, col:17> 'int'
+    | |   `-UnaryOperator 0x334fe78 <col:15, col:16> 'int' prefix '-'
+    | |     `-IntegerLiteral 0x334fe58 <col:16> 'int' 1
+    | `-CallExpr 0x3350090 <./src/9746.cpp:6:3, col:20> 'int'
+    |   |-ImplicitCastExpr 0x3350078 <col:3> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |   | `-DeclRefExpr 0x3350050 <col:3> 'int (const char *__restrict, ...)' lvalue Function 0x33402f0 'printf' 'int (const char *__restrict, ...)'
+    |   |-ImplicitCastExpr 0x33500c8 <col:10> 'const char *' <ArrayToPointerDecay>
+    |   | `-StringLiteral 0x334ff78 <col:10> 'const char [4]' lvalue "%d\n"
+    |   `-BinaryOperator 0x3350028 <col:17, col:19> 'int' '+'
+    |     |-ImplicitCastExpr 0x334fff8 <col:17> 'int' <LValueToRValue>
+    |     | `-DeclRefExpr 0x334ffa8 <col:17> 'int' lvalue Var 0x334fad8 'a' 'int'
+    |     `-ImplicitCastExpr 0x3350010 <col:19> 'int' <LValueToRValue>
+    |       `-DeclRefExpr 0x334ffd0 <col:19> 'int' lvalue Var 0x334fb48 'b' 'int'
+    `-ReturnStmt 0x3350120 <line:7:2, col:9>
+      `-IntegerLiteral 0x3350100 <col:9> 'int' 0

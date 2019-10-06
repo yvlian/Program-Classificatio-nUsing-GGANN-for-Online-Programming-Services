@@ -1,0 +1,103 @@
+TranslationUnitDecl 0x3402100 <<invalid sloc>> <invalid sloc>
+|-UsingDirectiveDecl 0x3ba5648 <./src/26932.cpp:14:1, col:17> col:17 Namespace 0x3402a98 'std'
+|-VarDecl 0x3ba56a8 <line:26:1, col:27> col:21 EPS 'const double' static cinit
+| `-FloatingLiteral 0x3ba5708 <col:27> 'double' 1.000000e-05
+|-CXXRecordDecl 0x3ba5728 <line:28:9, line:30:1> line:28:16 struct ArcNode_ definition
+| |-CXXRecordDecl 0x3ba5840 <col:9, col:16> col:16 implicit struct ArcNode_
+| |-FieldDecl 0x3ba58e0 <line:29:9, col:13> col:13 u 'int'
+| |-FieldDecl 0x3ba5938 <col:9, col:16> col:16 v 'int'
+| |-FieldDecl 0x3ba5990 <col:9, col:19> col:19 w 'int'
+| `-FieldDecl 0x3ba59e8 <col:9, col:22> col:22 next 'int'
+|-TypedefDecl 0x3ba5ab0 <line:28:1, line:30:2> col:2 ArcNode 'struct ArcNode_':'struct ArcNode_'
+| `-ElaboratedType 0x3ba5a60 'struct ArcNode_' sugar
+|   `-RecordType 0x3ba57c0 'struct ArcNode_'
+|     `-CXXRecord 0x3ba5728 'ArcNode_'
+`-FunctionDecl 0x3ba5cf0 <line:32:1, line:48:1> line:32:5 main 'int (int, const char **)'
+  |-ParmVarDecl 0x3ba5b28 <col:10, col:14> col:14 argc 'int'
+  |-ParmVarDecl 0x3ba5be0 <col:20, col:37> col:32 argv 'const char **':'const char **'
+  `-CompoundStmt 0x3ba6e80 <line:33:1, line:48:1>
+    |-CallExpr 0x3ba5f20 <line:35:9, col:38> 'FILE *'
+    | |-ImplicitCastExpr 0x3ba5f08 <col:9> 'FILE *(*)(const char *__restrict, const char *__restrict, FILE *__restrict)' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0x3ba5e88 <col:9> 'FILE *(const char *__restrict, const char *__restrict, FILE *__restrict)' lvalue Function 0x38b05f0 'freopen' 'FILE *(const char *__restrict, const char *__restrict, FILE *__restrict)'
+    | |-ImplicitCastExpr 0x3ba5f60 <col:17> 'const char *' <ArrayToPointerDecay>
+    | | `-StringLiteral 0x3ba5e00 <col:17> 'const char [8]' lvalue "test.in"
+    | |-ImplicitCastExpr 0x3ba5f78 <col:28> 'const char *' <ArrayToPointerDecay>
+    | | `-StringLiteral 0x3ba5e30 <col:28> 'const char [2]' lvalue "r"
+    | `-ImplicitCastExpr 0x3ba5f90 </usr/include/stdio.h:172:15> 'struct _IO_FILE *' <LValueToRValue>
+    |   `-DeclRefExpr 0x3ba5e60 <col:15> 'struct _IO_FILE *' lvalue Var 0x38aba08 'stdin' 'struct _IO_FILE *'
+    |-DeclStmt 0x3ba6018 <./src/26932.cpp:37:9, col:16>
+    | `-VarDecl 0x3ba5fb8 <col:9, col:13> col:13 used cas 'int'
+    |-DeclStmt 0x3ba6290 <line:38:9, col:34>
+    | |-VarDecl 0x3ba6040 <col:9, col:16> col:16 used x 'double'
+    | |-VarDecl 0x3ba60b0 <col:9, col:19> col:19 used y 'double'
+    | |-VarDecl 0x3ba6120 <col:9, col:22> col:22 used z 'double'
+    | |-VarDecl 0x3ba6190 <col:9, col:25> col:25 used each 'double'
+    | `-VarDecl 0x3ba6200 <col:9, col:31> col:31 used rst 'double'
+    |-CallExpr 0x3ba6490 <line:39:9, col:25> 'int'
+    | |-ImplicitCastExpr 0x3ba6478 <col:9> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0x3ba63f0 <col:9> 'int (const char *__restrict, ...)' lvalue Function 0x38b9918 'scanf' 'int (const char *__restrict, ...)'
+    | |-ImplicitCastExpr 0x3ba64c8 <col:15> 'const char *' <ArrayToPointerDecay>
+    | | `-StringLiteral 0x3ba6378 <col:15> 'const char [3]' lvalue "%d"
+    | `-UnaryOperator 0x3ba63d0 <col:21, col:22> 'int *' prefix '&'
+    |   `-DeclRefExpr 0x3ba63a8 <col:22> 'int' lvalue Var 0x3ba5fb8 'cas' 'int'
+    |-ForStmt 0x3ba6e10 <line:23:25, line:46:9>
+    | |-DeclStmt 0x3ba6570 <line:23:29, col:38>
+    | | `-VarDecl 0x3ba64f0 <col:29, line:40:17> col:14 used h 'int' cinit
+    | |   `-IntegerLiteral 0x3ba6550 <col:17> 'int' 1
+    | |-<<<NULL>>>
+    | |-BinaryOperator 0x3ba6608 <col:14, col:20> '_Bool' '<='
+    | | |-ImplicitCastExpr 0x3ba65d8 <col:14> 'int' <LValueToRValue>
+    | | | `-DeclRefExpr 0x3ba6588 <col:14> 'int' lvalue Var 0x3ba64f0 'h' 'int'
+    | | `-ImplicitCastExpr 0x3ba65f0 <col:20> 'int' <LValueToRValue>
+    | |   `-DeclRefExpr 0x3ba65b0 <col:20> 'int' lvalue Var 0x3ba5fb8 'cas' 'int'
+    | |-UnaryOperator 0x3ba6658 <col:14, line:23:50> 'int' postfix '++'
+    | | `-DeclRefExpr 0x3ba6630 <line:40:14> 'int' lvalue Var 0x3ba64f0 'h' 'int'
+    | `-CompoundStmt 0x3ba6dd0 <col:25, line:46:9>
+    |   |-CallExpr 0x3ba6820 <line:41:17, col:48> 'int'
+    |   | |-ImplicitCastExpr 0x3ba6808 <col:17> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |   | | `-DeclRefExpr 0x3ba67e0 <col:17> 'int (const char *__restrict, ...)' lvalue Function 0x38b9918 'scanf' 'int (const char *__restrict, ...)'
+    |   | |-ImplicitCastExpr 0x3ba6868 <col:23> 'const char *' <ArrayToPointerDecay>
+    |   | | `-StringLiteral 0x3ba66d0 <col:23> 'const char [12]' lvalue "%lf %lf %lf"
+    |   | |-UnaryOperator 0x3ba6730 <col:38, col:39> 'double *' prefix '&'
+    |   | | `-DeclRefExpr 0x3ba6708 <col:39> 'double' lvalue Var 0x3ba6040 'x' 'double'
+    |   | |-UnaryOperator 0x3ba6778 <col:42, col:43> 'double *' prefix '&'
+    |   | | `-DeclRefExpr 0x3ba6750 <col:43> 'double' lvalue Var 0x3ba60b0 'y' 'double'
+    |   | `-UnaryOperator 0x3ba67c0 <col:46, col:47> 'double *' prefix '&'
+    |   |   `-DeclRefExpr 0x3ba6798 <col:47> 'double' lvalue Var 0x3ba6120 'z' 'double'
+    |   |-BinaryOperator 0x3ba69b8 <line:42:17, col:30> 'double' lvalue '='
+    |   | |-DeclRefExpr 0x3ba6880 <col:17> 'double' lvalue Var 0x3ba6190 'each' 'double'
+    |   | `-BinaryOperator 0x3ba6990 <col:24, col:30> 'double' '/'
+    |   |   |-ParenExpr 0x3ba6950 <col:24, col:28> 'double'
+    |   |   | `-BinaryOperator 0x3ba6928 <col:25, col:27> 'double' '+'
+    |   |   |   |-ImplicitCastExpr 0x3ba68f8 <col:25> 'double' <LValueToRValue>
+    |   |   |   | `-DeclRefExpr 0x3ba68a8 <col:25> 'double' lvalue Var 0x3ba6040 'x' 'double'
+    |   |   |   `-ImplicitCastExpr 0x3ba6910 <col:27> 'double' <LValueToRValue>
+    |   |   |     `-DeclRefExpr 0x3ba68d0 <col:27> 'double' lvalue Var 0x3ba60b0 'y' 'double'
+    |   |   `-FloatingLiteral 0x3ba6970 <col:30> 'double' 3.000000e+00
+    |   |-BinaryOperator 0x3ba6b80 <line:43:17, col:36> 'double' lvalue '='
+    |   | |-DeclRefExpr 0x3ba69e0 <col:17> 'double' lvalue Var 0x3ba6200 'rst' 'double'
+    |   | `-BinaryOperator 0x3ba6b58 <col:23, col:36> 'double' '*'
+    |   |   |-ParenExpr 0x3ba6af8 <col:23, col:34> 'double'
+    |   |   | `-BinaryOperator 0x3ba6ad0 <col:24, col:31> 'double' '-'
+    |   |   |   |-BinaryOperator 0x3ba6a88 <col:24, col:26> 'double' '/'
+    |   |   |   | |-ImplicitCastExpr 0x3ba6a58 <col:24> 'double' <LValueToRValue>
+    |   |   |   | | `-DeclRefExpr 0x3ba6a08 <col:24> 'double' lvalue Var 0x3ba6040 'x' 'double'
+    |   |   |   | `-ImplicitCastExpr 0x3ba6a70 <col:26> 'double' <LValueToRValue>
+    |   |   |   |   `-DeclRefExpr 0x3ba6a30 <col:26> 'double' lvalue Var 0x3ba6190 'each' 'double'
+    |   |   |   `-FloatingLiteral 0x3ba6ab0 <col:31> 'double' 1.000000e+00
+    |   |   `-ImplicitCastExpr 0x3ba6b40 <col:36> 'double' <LValueToRValue>
+    |   |     `-DeclRefExpr 0x3ba6b18 <col:36> 'double' lvalue Var 0x3ba6120 'z' 'double'
+    |   |-CompoundAssignOperator 0x3ba6bf0 <line:44:17, col:24> 'double' lvalue '+=' ComputeLHSTy='double' ComputeResultTy='double'
+    |   | |-DeclRefExpr 0x3ba6ba8 <col:17> 'double' lvalue Var 0x3ba6200 'rst' 'double'
+    |   | `-FloatingLiteral 0x3ba6bd0 <col:24> 'double' 5.000000e-01
+    |   `-CallExpr 0x3ba6d80 <line:45:17, col:40> 'int'
+    |     |-ImplicitCastExpr 0x3ba6d68 <col:17> 'int (*)(const char *__restrict, ...)' <FunctionToPointerDecay>
+    |     | `-DeclRefExpr 0x3ba6d40 <col:17> 'int (const char *__restrict, ...)' lvalue Function 0x38b2390 'printf' 'int (const char *__restrict, ...)'
+    |     |-ImplicitCastExpr 0x3ba6db8 <col:24> 'const char *' <ArrayToPointerDecay>
+    |     | `-StringLiteral 0x3ba6c80 <col:24> 'const char [4]' lvalue "%d\n"
+    |     `-CStyleCastExpr 0x3ba6d18 <col:32, col:37> 'int' <NoOp>
+    |       `-ImplicitCastExpr 0x3ba6d00 <col:37> 'int' <FloatingToIntegral>
+    |         `-ImplicitCastExpr 0x3ba6ce8 <col:37> 'double' <LValueToRValue>
+    |           `-DeclRefExpr 0x3ba6cb0 <col:37> 'double' lvalue Var 0x3ba6200 'rst' 'double'
+    `-ReturnStmt 0x3ba6e68 <line:47:9, col:16>
+      `-IntegerLiteral 0x3ba6e48 <col:16> 'int' 0

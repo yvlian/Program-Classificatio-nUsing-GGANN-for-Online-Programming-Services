@@ -1,0 +1,45 @@
+1. processed_graphs  方法
+    返回值： list(dict_keys(['adjacency_lists', 'num_incoming_edge_per_type', 'labels', 'init']))
+    其中:
+          名称                           类型                                     意义
+          adjacency_lists               dict{int:array(list(list))}             {边类型id:array([[src,dest]])}
+          num_incoming_edge_per_type    dict(int:dict{int:int})                     {"edge_type":{"dest":num}}
+          init                          list(list)                               [图节点数目*节点ont-hot向量]
+
+
+
+2. make_mini_batch  方法
+
+         batch_graph_nodes_list         list(tuple)                            [(batch中图编号,batch中节点编号)]
+
+       （得到当前图中节点的batch编号）
+        batch_adjacency_lists           list(list)                             [[当前图['adjacency_lists']+node_offset]*边类型数目]
+
+        num_incoming_edge_per_type = zeros((num_nodes_in_graph, num_edge_type))
+        # 图节点数据*边数目 = N*7
+        [ [1 0 0 0 0 0 0]   # 节点1有一条类型为1的边
+          [0 0 0 0 0 1 1]   # 节点2各有一条类型为6和7的边
+          .....
+        ]
+        target_mask_values             list(list)                               [[1,0,0]]   # batch_graph_num*labels
+        target_target_mask             list(list)                               [[1.0,1.0,1.0]]
+
+
+3. placeholder
+
+batch_node_features                   list(list)                         [[1 0 0 0 ... 0 0]]   一个batch里面节点数目*节点one-hot编码维度
+batch_num_incoming_edges_per_type     list(list)                         [[3 1 0 0 0 0 0]]   batch节点数目 * 总边类型数目(7)
+graph_nodes_list                      list(list)                         [[0 1]...[0 44] [1 45] ...[1 88] [2 89]....] [batch图编号，图节点在batch中编号]
+target_values                         list(list)                         [[1 0...] [0 0...] [0 1....]]  label数目*batch图数目
+target_task_mask                      list(list)                         [[1. 1. ...] [1. 1. ....]...]  label数目*batch图数目
+adjacency_lists                       list(list(list))                   [[ [0 1] [1 0]...]...]     某种类型边（src,dest）总数*边类型数目
+
+num_graphs: 当前batch中图数目
+initial_node_representation:  batch_node_features  batch节点数目*h_dim
+
+4. GNN传播层  layers
+weights： [7*h_dim, h_dim] -> [7,h_dim,h_dim]
+bias:  [7, h_dim]
+
+5. 注意力层 layers*7
+weight: 7

@@ -1,0 +1,29 @@
+TranslationUnitDecl 0x29a1100 <<invalid sloc>> <invalid sloc>
+|-UsingDirectiveDecl 0x2fae558 <./src/1002.cpp:2:1, col:17> col:17 Namespace 0x29a1a98 'std'
+`-FunctionDecl 0x2fae5c8 <line:3:1, line:13:1> line:3:5 main 'int (void)'
+  `-CompoundStmt 0x2faf2f8 <line:4:1, line:13:1>
+    |-DeclStmt 0x2fae768 <line:5:5, col:18>
+    | |-VarDecl 0x2fae680 <col:5, col:15> col:15 used a 'long long'
+    | `-VarDecl 0x2fae6f0 <col:5, col:17> col:17 used b 'long long'
+    |-WhileStmt 0x2faf2a0 <line:6:2, line:11:5>
+    | |-<<<NULL>>>
+    | |-ImplicitCastExpr 0x2fae7a0 <line:6:8> '_Bool' <IntegralToBoolean>
+    | | `-IntegerLiteral 0x2fae780 <col:8> 'int' 1
+    | `-CompoundStmt 0x2faf280 <line:7:5, line:11:5>
+    |   `-IfStmt 0x2faf128 <line:9:3, col:25>
+    |     |-<<<NULL>>>
+    |     |-BinaryOperator 0x2faf0f8 <col:7, col:22> '_Bool' '&&'
+    |     | |-BinaryOperator 0x2faf030 <col:7, col:12> '_Bool' '=='
+    |     | | |-ImplicitCastExpr 0x2faf000 <col:7> 'long long' <LValueToRValue>
+    |     | | | `-DeclRefExpr 0x2faefb8 <col:7> 'long long' lvalue Var 0x2fae680 'a' 'long long'
+    |     | | `-ImplicitCastExpr 0x2faf018 <col:12> 'long long' <IntegralCast>
+    |     | |   `-IntegerLiteral 0x2faefe0 <col:12> 'int' 0
+    |     | `-BinaryOperator 0x2faf0d0 <col:17, col:22> '_Bool' '=='
+    |     |   |-ImplicitCastExpr 0x2faf0a0 <col:17> 'long long' <LValueToRValue>
+    |     |   | `-DeclRefExpr 0x2faf058 <col:17> 'long long' lvalue Var 0x2fae6f0 'b' 'long long'
+    |     |   `-ImplicitCastExpr 0x2faf0b8 <col:22> 'long long' <IntegralCast>
+    |     |     `-IntegerLiteral 0x2faf080 <col:22> 'int' 0
+    |     |-BreakStmt 0x2faf120 <col:25>
+    |     `-<<<NULL>>>
+    `-ReturnStmt 0x2faf2e0 <line:12:5, col:12>
+      `-IntegerLiteral 0x2faf2c0 <col:12> 'int' 0
